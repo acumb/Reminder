@@ -24,4 +24,6 @@ pickle
 datetime
 os (potentially subprocess)
 fcntl (for file locking, wraps the linux program flock)
-curses
+urwid (prev. curses)
+
+There is another 3rd party library that wraps curses and provides an easier to use API; it's called urwid. I think I will try this first.
