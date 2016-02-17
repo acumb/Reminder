@@ -27,3 +27,7 @@ fcntl (for file locking, wraps the linux program flock)
 urwid (prev. curses)
 
 There is another 3rd party library that wraps curses and provides an easier to use API; it's called urwid. I think I will try this first.
+
+I could either update the reminder data structure or file every time the interface is updated during a session, or only at the end of the session. For now the former, to prevent cases of adding soon reminder and forgeting to close the program (which could also be solved by saving every x seconds).
+
+Somehow the order that keypress is called has been mixed up. Now everything is fucked. How should I deal with the state variable now? I will need to have access to it at various levels.
